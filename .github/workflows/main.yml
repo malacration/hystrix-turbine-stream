@@ -24,8 +24,6 @@ jobs:
       - name: Gradlew
         run: chmod +x ./turbine/gradlew
       - name: build
-        run: ./turbine/gradlew build
-      - name: cd 
-        run: cd ./turbine
-      - name: ls
-        run: ls
+        run: cd ./turbine && ./gradlew build
+      - name: cd and ls
+        run: cd ./turbine && ls
