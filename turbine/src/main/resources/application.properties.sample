@@ -1,0 +1,9 @@
+server.port=8061
+eureka.client.enabled=false
+spring.application.name=turbine
+hystrix.dashboard.proxy-stream-allow-list=*
+hystrix.stream.queue.enabled=true
+spring.cloud.stream.kafka.binder.brokers=localhost:9092
+spring.cloud.stream.bindings.turbineStreamInput.group=turbine
+turbine.stream.enabled=true
+spring.cloud.stream.bindings.turbineStreamInput.destination=hystrixStreamOutput
