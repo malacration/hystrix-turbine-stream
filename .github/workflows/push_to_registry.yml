@@ -23,13 +23,14 @@ jobs:
         run: chmod +x ./gradlew
       - name: build
         run: ./gradlew build
+# persistir artefato
 #      - name: Archive production artifacts
 #        uses: actions/upload-artifact@v2
 #        with:
 #          name: jar
 #          path: build/libs/*.jar
-      - name: ls -la build/libs
-        run: ls -la build/libs
+      - name: read and write artifact
+        run: chmod 662 build/libs/*
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
       - name: Set up Docker Buildx
