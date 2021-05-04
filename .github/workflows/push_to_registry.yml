@@ -28,8 +28,8 @@ jobs:
         with:
           name: jar
           path: build/libs/*.jar
-      - name: ls -la build
-        run: ls -la build
+      - name: ls -la build/libs
+        run: ls -la build/libs
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
       - name: Set up Docker Buildx
