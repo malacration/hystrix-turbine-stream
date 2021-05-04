@@ -29,8 +29,6 @@ jobs:
 #        with:
 #          name: jar
 #          path: build/libs/*.jar
-      - name: read and write artifact
-        run: chmod -R 777 build && pwd && ls
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
       - name: Set up Docker Buildx
