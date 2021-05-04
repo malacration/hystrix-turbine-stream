@@ -21,14 +21,13 @@ jobs:
           java-version: 13
       - name: Gradlew
         run: chmod +x ./gradlew
+      - name: build
+        run: ./gradlew build
       - name: Archive production artifacts
         uses: actions/upload-artifact@v2
         with:
-            name: jar
-            path: |
-                build/libs/*
-      - name: build
-        run: ./gradlew build
+          name: jar
+          path: build/libs/*.jar
       - name: ls -la
         run: ls
       - name: Set up QEMU
