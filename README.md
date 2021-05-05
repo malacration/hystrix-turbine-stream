@@ -17,8 +17,8 @@ This will build the jar and run the application
     $ java -jar ./build/libs/turbine-x.y.z.jar
 ----
 
-Alternatively.
-This will run the application
+Alternatively, this will run the application
+
 ----
 	$ ./gradlew bootRun
 ----
