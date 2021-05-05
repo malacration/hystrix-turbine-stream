@@ -8,3 +8,4 @@ spring.cloud.stream.kafka.binder.brokers=${brokers:localhost:9092}
 spring.cloud.stream.bindings.turbineStreamInput.group=${name:turbine}
 turbine.stream.enabled=true
 spring.cloud.stream.bindings.turbineStreamInput.destination=${destination:hystrixStreamOutput}
+management.endpoint.hystrix.stream.enabled=true
