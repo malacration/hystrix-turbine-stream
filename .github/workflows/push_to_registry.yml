@@ -19,8 +19,10 @@ jobs:
         with:
           distribution: 'zulu'
           java-version: 13
-      - name: Gradlew
+      - name: Gradlew chmod +x
         run: chmod +x ./gradlew
+      - name: copy application.properties
+        run: cp src/main/resources/application.properties.sample src/main/resources/application.properties
       - name: build
         run: ./gradlew build
 # persistir artefato
